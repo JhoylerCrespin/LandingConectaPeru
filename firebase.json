@@ -4,7 +4,7 @@
     "indexes": "firestore.indexes.json"
   },
   "hosting": {
-    "public": "dist\\landing-conecta-peru\\browser",
+    "public": "dist/landing-conecta-peru/browser",
     "ignore": [
       "firebase.json",
       "**/.*",
