@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Juan Pérez",
+    "location": "Chimbote, Ancash, Perú",
+    "rating": 4.7,
+    "comment": "La conexión es muy rápida y estable. Lo uso todos los días para trabajar y no he tenido ningún problema. Muy recomendado.",
+    "profile_picture": "https://example.com/juan_perez.jpg"
+  },
+  {
+    "name": "Ana Sánchez",
+    "location": "Nuevo Chimbote, Ancash, Perú",
+    "rating": 4.8,
+    "comment": "Excelente servicio, la velocidad es impresionante y siempre me ha permitido hacer mis tareas sin inconvenientes. Estoy muy satisfecha.",
+    "profile_picture": "https://example.com/ana_sanchez.jpg"
+  },
+  {
+    "name": "Carlos García",
+    "location": "Chimbote, Ancash, Perú",
+    "rating": 4.6,
+    "comment": "El servicio es de calidad, siempre fiable. Lo uso para estudiar y trabajar desde casa, y nunca me ha fallado.",
+    "profile_picture": "https://example.com/carlos_garcia.jpg"
+  },
+  {
+    "name": "María Rodríguez",
+    "location": "Nuevo Chimbote, Ancash, Perú",
+    "rating": 4.5,
+    "comment": "Excelente conexión para ver videos y navegar por internet. Además, la atención al cliente es muy rápida y cordial.",
+    "profile_picture": "https://example.com/maria_rodriguez.jpg"
+  },
+  {
+    "name": "José Torres",
+    "location": "Chimbote, Ancash, Perú",
+    "rating": 4.7,
+    "comment": "La mejor opción en cuanto a velocidad de internet en Chimbote. Trabajo desde casa y nunca he tenido inconvenientes.",
+    "profile_picture": "https://example.com/jose_torres.jpg"
+  },
+  {
+    "name": "Laura Fernández",
+    "location": "Nuevo Chimbote, Ancash, Perú",
+    "rating": 4.8,
+    "comment": "Me encanta la calidad del servicio. Puedo ver películas en alta definición sin problemas y siempre tengo una conexión estable.",
+    "profile_picture": "https://example.com/laura_fernandez.jpg"
+  },
+  {
+    "name": "Pedro Díaz",
+    "location": "Chimbote, Ancash, Perú",
+    "rating": 4.6,
+    "comment": "Servicio muy confiable, la velocidad es constante y me ha permitido trabajar desde mi hogar sin interrupciones. Muy recomendado.",
+    "profile_picture": "https://example.com/pedro_diaz.jpg"
+  },
+  {
+    "name": "Lucía Mendoza",
+    "location": "Nuevo Chimbote, Ancash, Perú",
+    "rating": 4.5,
+    "comment": "El servicio de internet es rápido y sin interrupciones. Perfecto para el home office. Estoy muy contenta con la calidad.",
+    "profile_picture": "https://example.com/lucia_mendoza.jpg"
+  },
+  {
+    "name": "Ricardo Ramírez",
+    "location": "Chimbote, Ancash, Perú",
+    "rating": 4.7,
+    "comment": "Excelente velocidad, sobre todo para las videollamadas y conferencias. Siempre me ha dado buenos resultados.",
+    "profile_picture": "https://example.com/ricardo_ramirez.jpg"
+  },
+  {
+    "name": "Patricia Silva",
+    "location": "Nuevo Chimbote, Ancash, Perú",
+    "rating": 4.6,
+    "comment": "Muy buena conexión, ideal para trabajar y para ver contenido en streaming sin cortes. Estoy muy satisfecha.",
+    "profile_picture": "https://example.com/patricia_silva.jpg"
+  }
+]

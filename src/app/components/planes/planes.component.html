@@ -1,0 +1,70 @@
+<div class="max-w-screen-xl m-auto flex flex-col gap-6 aspect-video ">
+
+  <h3 class="text-4xl font-bold text-center text-blue-600">
+    <span class="bg-gradient-to-r from-orange-400 to-yellow-500 bg-clip-text text-transparent">
+      Cero Costo
+    </span>
+    de Instalación con Nuestros Planes
+  </h3>
+  <div class="flex items-center justify-between">
+
+    <button (click)="prev()" class="group rounded-full bg-white hover:bg-blue-600 border-[3px]  border-blue-600 dark:border-gray-400 
+    px-4 py-6
+         mr-6
+        transition-colors duration-300
+        
+        " aria-label="Anterior">
+
+
+      <div>
+        <svg class="fill-blue-600 group-hover:fill-white " xmlns="http://www.w3.org/2000/svg" viewBox="-0.5 -0.5 16 16"
+          id="Angle-Left--Streamline-Font-Awesome" height="20" width="20">
+          <desc>Angle Left Streamline Icon: https://streamlinehq.com</desc>
+          <path
+            d="M3.5719640624999998 6.6351796875c-0.4783265625 0.47833125 -0.4783265625 1.255134375 0 1.733465625l6.1226062500000005 6.1226062500000005c0.47833125 0.47833125 1.2551390625 0.47833125 1.733465625 0s0.4783265625 -1.255134375 0 -1.7334609374999999L6.1702453125000005 7.5 11.4242109375 2.242209375c0.4783265625 -0.4783265625 0.4783265625 -1.255134375 0 -1.7334609374999999s-1.255134375 -0.47833125 -1.733465625 0L3.5681390625000002 6.6313546875Z"
+            stroke-width="1"></path>
+        </svg>
+      </div>
+
+
+    </button>
+
+    <div class="items-center  overflow-hidden ">
+
+      <div class="flex gap-4 h-full flex-row justify-start " [ngStyle]="{'transform': 'translateX(' + translateX + 'px)'}" (mousedown)="onDragStart($event)"
+        (mousemove)="onDragMove($event)" (mouseup)="onDragEnd()" (mouseleave)="onDragEnd()"
+        (touchstart)="onDragStart($event)" (touchmove)="onDragMove($event)" (touchend)="onDragEnd()">
+        @for (item of plans; track $index) {
+
+        <div #cardPlanes class=" w-full h-full min-w-[330px]">
+          <app-c-planes [plan]="item" class="h-full" ></app-c-planes>
+        </div>
+        }
+      </div>
+
+    </div>
+
+    <button (click)="next()" class="group rounded-full bg-white hover:bg-blue-600 border-[3px]  border-blue-600 dark:border-gray-400 p-3
+         px-4 py-6
+        transition-colors duration-300
+        
+        ml-6
+
+        " aria-label="Siguiente">
+
+        <div>
+          <svg class="fill-blue-600 rotate-180 group-hover:fill-white " xmlns="http://www.w3.org/2000/svg" viewBox="-0.5 -0.5 16 16"
+            id="Angle-Left--Streamline-Font-Awesome" height="20" width="20">
+            <desc>Angle Left Streamline Icon: https://streamlinehq.com</desc>
+            <path
+              d="M3.5719640624999998 6.6351796875c-0.4783265625 0.47833125 -0.4783265625 1.255134375 0 1.733465625l6.1226062500000005 6.1226062500000005c0.47833125 0.47833125 1.2551390625 0.47833125 1.733465625 0s0.4783265625 -1.255134375 0 -1.7334609374999999L6.1702453125000005 7.5 11.4242109375 2.242209375c0.4783265625 -0.4783265625 0.4783265625 -1.255134375 0 -1.7334609374999999s-1.255134375 -0.47833125 -1.733465625 0L3.5681390625000002 6.6313546875Z"
+              stroke-width="1"></path>
+          </svg>
+        </div>
+
+    </button>
+
+
+  </div>
+
+</div>

@@ -1,0 +1,52 @@
+<section class="bg-white dark:bg-gray-900">
+    <div
+      class="aspect-video gap-12 items-center py-12 px-6 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-20 lg:px-8 dark:bg-slate-900 rounded-lg shadow-lg"
+    >
+      <!-- Imagen -->
+      <div class="flex justify-center items-center">
+        <img
+          class="w-full max-w-lg rounded-lg shadow-md object-cover"
+          src="../../../assets/images/Illustration.png"
+          alt="dashboard image"
+        />
+      </div>
+  
+      <!-- Contenido de texto -->
+      <div class="mt-6 md:mt-0">
+        <h2
+          class="mb-6 text-4xl font-bold tracking-tight leading-tight text-gray-900 dark:text-white"
+        >
+          Descubre las Ventajas de Nuestro Servicio de Internet
+        </h2>
+  
+        <ul class="flex flex-col gap-5">
+          <!-- Generación de lista dinámica -->
+          @for (badge of beneficios; track badge) {
+            <li
+              class="flex items-center gap-4 p-3 rounded-lg bg-gray-50 dark:bg-gray-800 shadow-md transition-transform transform hover:scale-105"
+            >
+              <!-- SVG -->
+              <svg
+                class="w-12 h-12 flex-shrink-0 text-green-500"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 12 12"
+                fill="currentColor"
+              >
+                <path
+                  d="M5.63829 1.34915C3.04767 1.34915 0.940033 3.45679 0.940033 6.04741C0.940033 8.63803 3.04767 10.7457 5.63829 10.7457C8.22891 10.7457 10.3365 8.63803 10.3365 6.04741C10.3365 3.45679 8.22891 1.34915 5.63829 1.34915ZM4.69911 8.12075L3.28702 6.71171C3.10344 6.52852 3.10307 6.2312 3.2862 6.04755C3.46944 5.86379 3.76698 5.86345 3.95064 6.0468L4.69817 6.79302L6.85326 4.63793C7.03671 4.45448 7.33414 4.45448 7.51759 4.63793C7.70104 4.82138 7.70104 5.11881 7.51759 5.30227L4.69911 8.12075Z"
+                />
+              </svg>
+  
+              <!-- Texto -->
+              <span
+                class="block text-lg font-medium text-gray-700 dark:text-gray-300"
+              >
+                {{ badge }}
+              </span>
+            </li>
+          }
+        </ul>
+      </div>
+    </div>
+  </section>
+  

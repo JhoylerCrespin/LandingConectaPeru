@@ -1,0 +1,68 @@
+<div class="
+  hover:scale-105 flex flex-col p-10 gap-4 
+  items-center border-[3px] h-full w-full
+transition-all ease-out
+   border-[#0c57fa6e] rounded-2xl
+    shadow-blue-400/50 shadow-lg m-5">
+
+  <!-- Velocidad -->
+  <div class="flex items-end text-orange-500 font-bold">
+    <span class="text-6xl">{{ plan.speed }}</span>
+    <span>Mbps</span>
+  </div>
+  <span class="text-xl text-gray-600">Velocidad Simétrica</span>
+
+  <!-- Cobertura y Tipo de conexión -->
+  <div class="flex gap-2 text-gray-600">
+    <div class="flex flex-col items-center gap-4">
+      <!-- Icono de cobertura -->
+      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M23.7501 11.2499C23.7501 10.1009 23.5237 8.96306 23.084 7.90146C22.6443 6.83986 21.9998 5.87527 21.1872 5.06275C20.3747 4.25024 19.4101 3.60572 18.3485 3.16599C17.2869 2.72626 16.1491 2.49994 15.0001 2.49994C13.851 2.49994 12.7132 2.72626 11.6516 3.16599C10.59 3.60572 9.62539 4.25024 8.81288 5.06275C8.00036 5.87527 7.35584 6.83986 6.91611 7.90146C6.47639 8.96306 6.25006 10.1009 6.25006 11.2499C6.25006 12.9837 6.76256 14.5962 7.63131 15.9562H7.62131C10.5713 20.5749 15.0001 27.4999 15.0001 27.4999L22.3788 15.9562H22.3701C23.2706 14.5517 23.7495 12.9184 23.7501 11.2499ZM15.0001 14.9999C14.0055 14.9999 13.0517 14.6049 12.3484 13.9016C11.6451 13.1983 11.2501 12.2445 11.2501 11.2499C11.2501 10.2554 11.6451 9.30155 12.3484 8.59829C13.0517 7.89503 14.0055 7.49994 15.0001 7.49994C15.9946 7.49994 16.9485 7.89503 17.6517 8.59829C18.355 9.30155 18.7501 10.2554 18.7501 11.2499C18.7501 12.2445 18.355 13.1983 17.6517 13.9016C16.9485 14.6049 15.9946 14.9999 15.0001 14.9999Z"
+          fill="#626473" />
+      </svg>
+      <span class="text-sm w-20 text-center">{{ plan.coverage }}</span>
+    </div>
+    <div class="flex flex-col items-center gap-4">
+      <!-- Icono de tipo de conexión -->
+      <svg width="36" height="28" viewBox="0 0 36 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M17.5245 21C19.4599 21 21.029 22.567 21.029 24.5C21.029 26.433 19.4599 28 17.5245 28C15.589 28 14.02 26.433 14.02 24.5C14.02 22.567 15.589 21 17.5245 21ZM17.5245 14.2576C20.9673 14.2576 24.1115 16.0123 25.936 18.8521C26.3018 19.4216 26.1362 20.1793 25.566 20.5447C24.9959 20.9101 24.2371 20.7446 23.8713 20.1752C22.4934 18.0304 20.123 16.7076 17.5245 16.7076C14.9236 16.7076 12.5514 18.0329 11.174 20.1808C10.8087 20.7505 10.0501 20.9166 9.47965 20.5517C8.90918 20.1869 8.74289 19.4292 9.10822 18.8595C10.9319 16.0155 14.0785 14.2576 17.5245 14.2576ZM17.5245 7.35443C22.8854 7.35443 27.7968 9.77229 30.9742 13.8724C31.3889 14.4074 31.2907 15.1768 30.755 15.5909C30.2193 16.005 29.4489 15.907 29.0343 15.3719C26.3204 11.87 22.1246 9.80443 17.5245 9.80443C12.9951 9.80443 8.81167 11.8842 6.07021 15.3778C5.65235 15.9103 4.88137 16.0037 4.34819 15.5863C3.815 15.169 3.72151 14.399 4.13937 13.8665C7.341 9.78653 12.2331 7.35443 17.5245 7.35443ZM17.5245 0C24.3664 0 30.2156 2.62483 34.7295 7.56105C35.1863 8.06062 35.1511 8.83545 34.6509 9.29169C34.1507 9.74792 33.3749 9.71279 32.9181 9.21323C28.8649 4.78079 23.6709 2.45 17.5245 2.45C11.5286 2.45 6.21692 4.85038 2.12252 9.22378C1.65987 9.71796 0.883681 9.744 0.388864 9.28194C-0.105953 8.81987 -0.132024 8.04468 0.330632 7.5505C4.87989 2.69125 10.8352 0 17.5245 0Z"
+          fill="#04041B" fill-opacity="0.58" />
+      </svg>
+
+      <span class="text-sm w-20 text-center">{{ plan.connection_type }}</span>
+    </div>
+  </div>
+
+  <!-- Oferta inicial -->
+  <div class="text-blue-600 font-semibold text-center text-xl">
+    <span class="w-40 block">¿Primera vez? Contrata a solo:</span>
+  </div>
+  <div>
+    <div class="font-bold text-orange-400">
+      <span>S/ <span class="text-6xl">{{ plan.initial_offer.amount }}</span> </span>
+    </div>
+    <div class="text-gray-600 font-semibold">
+      <span class="pl-6">{{ plan.initial_offer.duration }}</span>
+    </div>
+  </div>
+
+  <!-- Precio regular -->
+  <div class="text-orange-500 font-bold text-xl text-center">
+    <span>Precio regular S/ <span>{{ plan.regular_price }}</span></span>
+  </div>
+
+  <!-- Promoción -->
+  <div>
+    <p class="text-blue-700 text-center font-semibold">{{ plan.promotion }}</p>
+  </div>
+
+  <!-- Botón -->
+  <div class="p-4 w-full">
+    <a [href]="plan.whatsapp_url"
+      class="block text-center bg-blue-600 hover:bg-blue-700  text-white font-bold py-3 w-full rounded-3xl uppercase shadow-md shadow-sky-400/50">
+      Elegir
+    </a>
+  </div>
+</div>
